@@ -1,9 +1,11 @@
-function Student(props) {
-    console.log(props);
-    return (
-        <div style={{ backgroundColor: "skyblue", margin: 10 }}>
-            <h3>Name = {props.name}</h3>
-        </div>
-    )
+import React from "react";
+
+export default class Student extends React.Component {
+
+    render() {
+        console.log(this.props.name);
+        return (
+            <div>Student {this.props.name} </div>
+        )
+    }
 }
-export default Student;
